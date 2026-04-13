@@ -59,6 +59,8 @@ fun TicketsScreen(modifier: Modifier) {
                             put("lastname", "ashhab")
                             put("mobile", "01556839245")
                             put("designation", "Supervisor")
+                            put("from_date", "2024-01-01T00:00:00Z")
+                            put("to_date", "2025-12-15T23:59:59Z")
                         }
 
                         sdk.getTicketsList(body, object : SynkroniqSDK.ResponseCallback<String> {

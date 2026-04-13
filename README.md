@@ -7,7 +7,7 @@ Android SDK for integrating Synkroniq ticketing and service-category APIs into y
 
 ## Release Notes
 
-### v1.0.0-beta.1
+### v1.0.0
 
 - Initial beta release
 - Service Categories: list, get by ID, search
@@ -76,13 +76,15 @@ import com.technonext.synkroniq.data.ApiError
 
 ## Getting Started
 
+**For API key, please contact the Synkroniq Developer Team.**
+
 Initialize the SDK once before making any API calls — typically in your `Application` class or `MainActivity.onCreate()`:
 
 ```kotlin
 val sdk = SynkroniqSDK.getInstance(
-    apiKey    = "YOUR_API_KEY",
+    apiKey    = "YOUR_API_KEY", // API key will be provided upon request
     platform  = "android",
-    timeoutMs = 30000L      // optional, default 30 000 ms
+    timeoutMs = 30000L      // optional, default 30,000 ms
 )
 ```
 
