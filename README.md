@@ -290,8 +290,10 @@ Thread {
     })
 }.start()
 ```
-
 ---
+
+## Note:getTicketsList also supports a custom type parameter in the request body.
+
 
 #### `createTicket(jsonBody, callback)`
 
